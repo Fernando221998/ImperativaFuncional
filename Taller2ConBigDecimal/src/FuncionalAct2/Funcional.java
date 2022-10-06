@@ -27,8 +27,8 @@ public class Funcional {
 		System.out.println("Suma de todos los productos con impuestos "+cuentaImpuesto);
 		
 		System.out.println("Productos que empezan por C "+listaProduct.stream()
-        .filter(porC -> porC.name.startsWith("C"))
-        .collect(Collectors.toList()).toString());
+        	.filter(porC -> porC.name.startsWith("C"))
+        	.collect(Collectors.toList()).toString());
 		
 		BigDecimal cuentaConImpuestoMayoresDeDiez = new BigDecimal(listaProduct.stream()
 				.filter(producto -> producto.price.doubleValue() > 10)
