@@ -33,7 +33,7 @@ public class Funcional {
 				.map(producto -> producto.getPrice() + ((producto.getPrice() + producto.tax.percent)/100))
 				.reduce((x, y) -> x + y);
 		
-		System.out.println("Suma de todos los productos con impuestosmayores de 10 "+cuentaImpuestoMayorDiez.get());
+		System.out.println("Suma de todos los productos con impuestos mayores de 10 "+cuentaImpuestoMayorDiez.get());
 		
 		System.out.println("Productos que empezan por C "+listaProduct.stream()
         .filter(porC -> porC.getName().startsWith("C"))
